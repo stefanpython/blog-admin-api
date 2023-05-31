@@ -1,0 +1,59 @@
+/* Navigation bar */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  padding: 0;
+  background-color: white;
+  margin: 0; /* Remove default margin */
+  height: 100px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #555;
+}
+
+.nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+/* Posts */
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.post-card {
+  margin: 20px;
+  width: 250px;
+  word-wrap: break-word;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 15px 15px 15px whitesmoke;
+}
+
+.post-card:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
