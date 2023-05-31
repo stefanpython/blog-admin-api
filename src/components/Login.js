@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
@@ -7,6 +7,13 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const [cookies, setCookie] = useCookies(["token"]);
+
+  useEffect(() => {
+    // Check if the user is already logged in
+    if (cookies.token) {
+      navigate("/posts");
+    }
+  }, [cookies.token, navigate]);
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
