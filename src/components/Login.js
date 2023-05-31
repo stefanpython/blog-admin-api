@@ -52,21 +52,25 @@ const Login = () => {
 
   return (
     <div>
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="login-form">
+        <h1>Login</h1>
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={handleUsernameChange}
+          className="login-input"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={handlePasswordChange}
+          className="login-input"
         />
-        <button type="submit">Login</button>
+        <button type="submit" className="login-button">
+          Login
+        </button>
       </form>
     </div>
   );

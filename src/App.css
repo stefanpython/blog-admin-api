@@ -28,6 +28,17 @@
   border: 1px solid rgb(236, 236, 236);
 }
 
+.blog-logo {
+  margin-left: 100%;
+  min-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-logo {
+    margin-left: 30px; /* Reset the margin on smaller screens */
+  }
+}
+
 /* Posts */
 .post-container {
   display: flex;
@@ -56,4 +67,50 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/* Login form  */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Logut button  */
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  margin-right: 10%;
+}
+
+.logout-btn button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn button:hover {
+  background-color: #c0392b;
 }
