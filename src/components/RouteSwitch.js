@@ -5,6 +5,7 @@ import "../App.css";
 import Nav from "./Nav";
 import Posts from "./Posts";
 import Login from "./Login";
+import CreatePost from "./CreatePost";
 
 const RouterSwitch = () => {
   return (
@@ -13,6 +14,7 @@ const RouterSwitch = () => {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/posts" element={<Posts />} />
+        <Route path="/posts/create" element={<CreatePost />} />
       </Routes>
     </HashRouter>
   );

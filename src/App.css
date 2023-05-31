@@ -5,8 +5,10 @@
   justify-content: flex-start; /* Align items to the left */
   align-items: center;
   padding: 0;
-  background-color: white;
+  background: linear-gradient(45deg, #d3d3d3, #808080);
+
   margin: 0; /* Remove default margin */
+  margin-top: -1px;
   height: 100px;
 }
 
@@ -59,7 +61,7 @@
 }
 
 .post-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: 0.7s;
 }
 
@@ -113,4 +115,62 @@
 
 .logout-btn button:hover {
   background-color: #c0392b;
+}
+
+/* Create post form  */
+.create-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.create-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.createpost-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.createpost-btn:hover {
+  background-color: #0056b3;
+}
+
+.create-link {
+  list-style: none;
+  font-size: 20px;
+}
+
+.create-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.create-link a:hover {
+  background-color: darkslategray;
+  padding: 10px;
+  border-radius: 20px;
 }

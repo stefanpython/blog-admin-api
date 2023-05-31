@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Login from "./Login";
 import Logout from "./Logout";
 import { useCookies } from "react-cookie";
 
@@ -16,6 +15,12 @@ const Nav = () => {
             <h1 className="blog-logo">Blog Admin</h1>
           </Link>
         </li>
+        {isLoggedIn && (
+          <li className="create-link">
+            <Link to="/posts/create">Create Post</Link>
+          </li>
+        )}
+
         {isLoggedIn && (
           <li className="logout-btn">
             <Logout />
