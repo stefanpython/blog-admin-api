@@ -24,6 +24,7 @@ const Posts = () => {
         {posts.map((post) => (
           <div key={post._id} className="post-card">
             <h1>{post.authorName}</h1>
+            <p>{post.title}</p>
             <p>{post.content}</p>
             <br />
             <p>
@@ -35,8 +36,8 @@ const Posts = () => {
                 minute: "numeric",
               })}
             </p>
-            <Link to={`/posts/${post._id}`}>
-              <button className="view-button">Edit Post</button>
+            <Link to={`/posts/${post._id}/update`}>
+              <button className="edit-button">Edit Post</button>
             </Link>
           </div>
         ))}
