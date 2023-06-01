@@ -197,3 +197,14 @@ label {
 .edit-button:hover {
   background-color: #01b19f;
 }
+
+.delete-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #c40303;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}

@@ -39,6 +39,9 @@ const Posts = () => {
             <Link to={`/posts/${post._id}/update`}>
               <button className="edit-button">Edit Post</button>
             </Link>
+            <Link to={`/posts/${post._id}/delete`}>
+              <button className="delete-button">Delete</button>
+            </Link>
           </div>
         ))}
       </div>

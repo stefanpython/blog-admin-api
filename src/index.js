@@ -7,11 +7,11 @@ import { CookiesProvider } from "react-cookie";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <>
     <CookiesProvider>
       <LayoutProvider>
         <RouteSwitch />
       </LayoutProvider>
     </CookiesProvider>
-  </React.StrictMode>
+  </>
 );

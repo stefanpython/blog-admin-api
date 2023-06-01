@@ -7,6 +7,7 @@ import Posts from "./Posts";
 import Login from "./Login";
 import CreatePost from "./CreatePost";
 import UpdatePost from "./UpdatePost";
+import DeletePost from "./DeletePost";
 
 const RouterSwitch = () => {
   return (
@@ -17,6 +18,7 @@ const RouterSwitch = () => {
         <Route path="/posts" element={<Posts />} />
         <Route path="/posts/create" element={<CreatePost />} />
         <Route path="/posts/:id/update" element={<UpdatePost />} />
+        <Route path="/posts/:id/delete" element={<DeletePost />} />
       </Routes>
     </HashRouter>
   );
