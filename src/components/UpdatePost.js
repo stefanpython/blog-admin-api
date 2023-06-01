@@ -67,8 +67,8 @@ const UpdatePost = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit} className="update-form">
+    <div className="update-form">
+      <form onSubmit={handleSubmit}>
         <h1>Update Post</h1>
         <div className="form-group">
           <label htmlFor="authorName">Author:</label>
