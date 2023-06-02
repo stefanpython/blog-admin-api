@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import { useParams, useNavigate } from "react-router-dom";
+import DeleteComment from "./DeleteComment";
 
 const UpdatePost = () => {
   const [cookies] = useCookies(["token"]);
@@ -113,6 +114,8 @@ const UpdatePost = () => {
       </form>
 
       {success && <p>Successfully updated! Redirecting to main in 3s ...</p>}
+
+      <DeleteComment />
     </div>
   );
 };
