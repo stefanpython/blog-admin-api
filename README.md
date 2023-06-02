@@ -2,14 +2,16 @@
 
 ![Admin-blog](presentation.gif)
 
-The Blog Admin Frontend is a React application that provides an interface for admin users to manage blog posts. It allows users to log in, log out, create new posts, and edit existing posts.
+The Blog Admin Frontend is a React application that provides an interface for admin users to manage blog posts. It allows users to log in, log out, create new posts, edit and delete existing posts and delete single or all comments.
 
 ## Features
 
 - User authentication and authorization
 - Create new blog posts
-- Edit existing blog posts
+- Edit and delete existing blog posts
+- Delete single and all comments
 - Logout functionality
+-
 
 ## Technologies Used
 
