@@ -27,7 +27,7 @@ const Login = () => {
     event.preventDefault();
 
     // Perform the login fetch request here
-    fetch("http://localhost:3000/api/login", {
+    fetch("https://fine-pink-narwhal-coat.cyclic.app/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

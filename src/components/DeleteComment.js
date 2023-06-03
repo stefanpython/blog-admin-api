@@ -10,11 +10,14 @@ const DeleteComment = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/posts/${id}/comments`, {
-      headers: {
-        Authorization: `Bearer ${cookies.token}`,
-      },
-    })
+    fetch(
+      `https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}/comments`,
+      {
+        headers: {
+          Authorization: `Bearer ${cookies.token}`,
+        },
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         setComments(data.comments || []);
@@ -27,12 +30,15 @@ const DeleteComment = () => {
   }, [id, cookies.token]);
 
   const handleDelete = (commentId) => {
-    fetch(`http://localhost:3000/api/posts/${id}/comments/${commentId}`, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${cookies.token}`,
-      },
-    })
+    fetch(
+      `https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}/comments/${commentId}`,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${cookies.token}`,
+        },
+      }
+    )
       .then((response) => {
         if (response.ok) {
           setComments((prevComments) =>
@@ -50,13 +56,16 @@ const DeleteComment = () => {
   };
 
   const handleDeleteAll = () => {
-    fetch(`http://localhost:3000/api/posts/${id}/comments`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${cookies.token}`,
-      },
-    })
+    fetch(
+      `https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}/comments`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${cookies.token}`,
+        },
+      }
+    )
       .then((response) => {
         if (response.ok) {
           setComments([]);

@@ -22,7 +22,7 @@ const CreatePost = () => {
     event.preventDefault();
 
     // Perform the create post request
-    fetch("http://localhost:3000/api/posts/", {
+    fetch("https://fine-pink-narwhal-coat.cyclic.app/api/posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

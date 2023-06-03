@@ -12,7 +12,7 @@ const DeletePost = () => {
       "Are you sure you want to delete this post?"
     );
     if (confirmed) {
-      fetch(`http://localhost:3000/api/posts/${id}`, {
+      fetch(`https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

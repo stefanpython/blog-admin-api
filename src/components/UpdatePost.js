@@ -12,7 +12,7 @@ const UpdatePost = () => {
 
   // Fetch data for a single post to prepopulate update form
   useEffect(() => {
-    fetch(`http://localhost:3000/api/posts/${id}`)
+    fetch(`https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setPost(data.post);
@@ -27,7 +27,7 @@ const UpdatePost = () => {
     event.preventDefault();
 
     // Send updated post to the Api
-    fetch(`http://localhost:3000/api/posts/${id}`, {
+    fetch(`https://fine-pink-narwhal-coat.cyclic.app/api/posts/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
