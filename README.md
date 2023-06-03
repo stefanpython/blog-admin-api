@@ -2,7 +2,7 @@
 
 Live demo [Here](https://stefanpython.github.io/blog-admin-api/)
 
-[Blog-User-Api](https://github.com/stefanpython/blog-user-api)
+Blog-User-Api [here](https://github.com/stefanpython/blog-user-api)
 
 ![Admin-blog](presentation.gif)
 
