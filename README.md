@@ -6,7 +6,7 @@ Blog user [here](https://github.com/stefanpython/blog-user-api)
 
 RESTful API [here](https://github.com/stefanpython/blog-API)
 
-  [Admin-blog](presentation.gif)
+  ![Admin-blog](presentation.gif)
 
 The Blog Admin Frontend is a React application that provides an interface for admin users to manage blog posts. It allows users to log in, log out, create new posts, edit and delete existing posts and delete single or all comments.
 
